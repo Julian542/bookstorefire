@@ -22,6 +22,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseCongif),
     AngularFireDatabaseModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    NgxSpinnerModule
   ],
   providers: [AngularFireAuth, AngularFirestore],
   bootstrap: [AppComponent]
