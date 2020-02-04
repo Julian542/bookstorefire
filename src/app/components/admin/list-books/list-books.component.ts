@@ -15,6 +15,7 @@ export class ListBooksComponent implements OnInit {
 
   constructor(private dataApi: DataApiService, private authService: AuthService) { }
   private books : BookInterface[] ;
+  pageActual : number = 1;
   public isAdmin : any = null;
   public userUid : string = null;
 
